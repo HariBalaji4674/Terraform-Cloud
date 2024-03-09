@@ -1,4 +1,4 @@
 resource "aws_instance" "jenkins" {
-  ami = "ami-0f3c7d07486cad139"
-  instance_type = "t2.micro"
+  ami = var.ami_id
+  instance_type = var.instance_type
 }
